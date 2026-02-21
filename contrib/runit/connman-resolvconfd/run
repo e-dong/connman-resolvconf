@@ -1,2 +1,2 @@
 #!/bin/sh
-exec /usr/local/bin/connman-resolvconfd &>> /var/log/connman-resolvconf/current
+exec /usr/bin/connman-resolvconfd &>> /var/log/connman-resolvconf/current

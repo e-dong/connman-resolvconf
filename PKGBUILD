@@ -29,7 +29,7 @@ build() {
 package() {
   #cd "$pkgname-$pkgver"
   cd ..
-  install -Dm755 -t "$pkgdir"/usr/local/bin target/release/connman-resolvconfd
+  install -Dm755 -t "$pkgdir"/usr/bin target/release/connman-resolvconfd
   install -Dm744 -t "$pkgdir"/etc/runit/sv/connman-resolvconfd contrib/runit/connman-resolvconfd/run
   install -Dm744 -t "$pkgdir"/etc/runit/sv/connman-resolvconfd/log contrib/runit/connman-resolvconfd/log/run
   mkdir -p "$pkgdir"/var/log/connman-resolvconf

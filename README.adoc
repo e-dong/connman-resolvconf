@@ -88,10 +88,10 @@ curl -sSL {releases-uri}/checksums.txt | sha256sum -c --ignore-missing
 tar -xzf {proj-name}-{version}-*.tar.gz
 ----
 
-. Install `{bin-name}` somewhere on your `PATH`, e.g. `/usr/local/bin`:
+. Install `{bin-name}` somewhere on your `PATH`, e.g. `/usr/bin`:
 +
 [source, sh, subs="verbatim, attributes"]
-install -D -m755 {proj-name}-{version}-*/{bin-name} /usr/local/bin/
+install -D -m755 {proj-name}-{version}-*/{bin-name} /usr/bin/
 
 
 === From Source Tarball
@@ -103,7 +103,7 @@ tar -xzf {proj-name}-{version}.tar.gz
 cd {proj-name}-{version}
 
 cargo build --release --locked
-install -D -m755 target/release/{bin-name} -t /usr/local/bin/
+install -D -m755 target/release/{bin-name} -t /usr/bin/
 ----
 
 
